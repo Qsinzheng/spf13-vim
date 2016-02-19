@@ -55,6 +55,9 @@
         " across (heterogeneous) systems easier.
         if WINDOWS()
           set runtimepath=$HOME/.vim,$VIM/vimfiles,$VIMRUNTIME,$VIM/vimfiles/after,$HOME/.vim/after
+          "avoid prompt-menu character garbled(by Qsin) 
+          "set langmenu=zh_CN
+          let $LANG = 'zh_CN.UTF-8'
         endif
     " }
     
