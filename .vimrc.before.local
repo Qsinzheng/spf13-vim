@@ -1,0 +1,2 @@
+" list only the plugin groups that will use
+let g:spf13_bundle_groups=['general', 'writing', 'neocomplete', 'programming', 'php', 'javascript', 'html', 'misc',]
