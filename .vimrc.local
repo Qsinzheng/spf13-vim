@@ -1,1 +1,9 @@
+" toggle gui stuff
+if has('gui_running')
+    set guioptions-=m         " Remove menu
+    set guioptions-=T         " Remove toolbar
+    set guioptions-=r         " Remove righthand scrollbar
+endif
+
+" specify colorscheme
 colorscheme ir_black
