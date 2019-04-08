@@ -1,1 +1,8 @@
+" color scheme
 colorscheme ir_black
+
+" ctrlp setting
+let g:ctrlp_working_path_mode = 'ra'
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlPBuffer'
+
