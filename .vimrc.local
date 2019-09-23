@@ -1,8 +1,13 @@
 " color scheme
-colorscheme ir_black
+"colorscheme ir_black
+let g:colorscheme_use_default = 'true'
 
 " ctrlp setting
 let g:ctrlp_working_path_mode = 'ra'
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlPBuffer'
 
+"my common vimrc ext enhangce
+source ~/.vimrc.ext/.vimrc.ext.entry.elementary.vim
+source ~/.vimrc.ext/.vimrc.ext.entry.advanced.vim
+source ~/.vimrc.ext/.vimrc.ext.entry.linux.vim
