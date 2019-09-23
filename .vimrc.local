@@ -1,5 +1,5 @@
 " color scheme
-colorscheme ir_black
+"colorscheme ir_black
 
 " ctrlp setting
 let g:ctrlp_working_path_mode = 'ra'
