@@ -7,6 +7,23 @@ let g:ctrlp_working_path_mode = 'ra'
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlPBuffer'
 
+" NerdTree {
+if isdirectory(expand("~/.vim/bundle/nerdtree"))
+    function! NERDToggleNavigator()
+        if !g:NERDTree.IsOpen()
+            NERDTreeFind "%"<CR>
+        else
+            NERDTreeToggle<CR>
+        endif
+    endfunction
+
+    "map <C-e> <plug>NERDTreeTabsToggle<CR>
+    "map <leader>e :NERDTreeFind<CR>
+    "nmap <leader>nt :NERDTreeFind<CR>
+    nmap <C-e> :call NERDToggleNavigator()<CR>
+endif
+" }
+
 "my common vimrc ext enhangce
 source ~/.vimrc.ext/.vimrc.ext.entry.elementary.vim
 source ~/.vimrc.ext/.vimrc.ext.entry.advanced.vim
